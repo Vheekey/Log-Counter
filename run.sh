@@ -1,6 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-composer install -n
 bin/console doc:database:create --no-interaction
 bin/console doc:mig:mig --no-interaction
 bin/console doc:fix:load --no-interaction
