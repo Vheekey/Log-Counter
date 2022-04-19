@@ -12,12 +12,47 @@
 
 ### Sample request
 <pre>
-    https://localhost:8000/count?statusCode=201&serviceNames=INVOICE-SERVICE
+    <code>
+        https://localhost:8000/count?statusCode=201&serviceNames=INVOICE-SERVICE&startDate=2021-08-17&endDate=2021-08-18
+    </code>
 </pre>
 
 ### Sample Response
 <pre>
     <code>
-        [{"statusCode":"201","serviceName":"INVOICE-SERVICE","date":{"date":"2021-08-17 09:21:55.000000","timezone_type":3,"timezone":"UTC"},"endpoint":"\/invoices","method":"POST"},{"statusCode":"201","serviceName":"INVOICE-SERVICE","date":{"date":"2021-08-17 09:22:58.000000","timezone_type":3,"timezone":"UTC"},"endpoint":"\/invoices","method":"POST"},{"statusCode":"201","serviceName":"INVOICE-SERVICE","date":{"date":"2021-08-17 09:23:53.000000","timezone_type":3,"timezone":"UTC"},"endpoint":"\/invoices","method":"POST"},{"statusCode":"201","serviceName":"INVOICE-SERVICE","date":{"date":"2021-08-17 09:26:53.000000","timezone_type":3,"timezone":"UTC"},"endpoint":"\/invoices","method":"POST"},{"statusCode":"201","serviceName":"INVOICE-SERVICE","date":{"date":"2021-08-18 10:26:53.000000","timezone_type":3,"timezone":"UTC"},"endpoint":"\/invoices","method":"POST"}]
+        [{
+            "statusCode":"201",
+            "serviceName":"INVOICE-SERVICE",
+            "date":{"date":"2021-08-17 09:21:55.000000","timezone_type":3,"timezone":"UTC"},
+            "endpoint":"\/invoices","method":"POST"
+        },
+        {
+            "statusCode":"201",
+            "serviceName":"INVOICE-SERVICE",
+            "date":{"date":"2021-08-17 09:22:58.000000","timezone_type":3,"timezone":"UTC"},
+            "endpoint":"\/invoices",
+            "method":"POST"
+        },
+        {
+            "statusCode":"201",
+            "serviceName":"INVOICE-SERVICE",
+            "date":{"date":"2021-08-17 09:23:53.000000","timezone_type":3,"timezone":"UTC"},
+            "endpoint":"\/invoices",
+            "method":"POST"
+        },
+        {
+            "statusCode":"201",
+            "serviceName":"INVOICE-SERVICE",
+            "date":{"date":"2021-08-17 09:26:53.000000","timezone_type":3,"timezone":"UTC"},
+            "endpoint":"\/invoices",
+            "method":"POST"
+        },
+        {
+            "statusCode":"201",
+            "serviceName":"INVOICE-SERVICE",
+            "date":{"date":"2021-08-18 10:26:53.000000","timezone_type":3,"timezone":"UTC"},
+            "endpoint":"\/invoices",
+            "method":"POST"
+        }]
     </code>
 </pre>
